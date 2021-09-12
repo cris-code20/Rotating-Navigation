@@ -1,11 +1,8 @@
-const Open = document.getElementById('open')
-const Close = document.getElementById('close')
-const Container = document.querySelector('.container')
+const BTN = document.querySelector('.btn')
+const Search = document.querySelector('.search')
+const Input = document.querySelector('.input')
 
-Open.addEventListener('click', ()=>{
- Container.classList.add('show-nav')   
-})
-
-Close.addEventListener('click', ()=>{
-    Container.classList.remove('show-nav')   
+BTN.addEventListener('click', ()=>{
+ Search.classList.toggle('active')
+ Input.focus()   
 })
